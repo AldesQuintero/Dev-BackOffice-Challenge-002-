@@ -46,6 +46,9 @@ Gracias por la oportunidad y comprensión.
 - Maven 3.9.9
 - IDE recomendado: IntelliJ IDEA o VS Code con extensiones de Java
 
+### Conexión 
+http://localhost:8080
+
 ### Pasos para compilar:
 ```bash
 git clone https://github.com/AldesQuintero/Dev-BackOffice-Challenge-002.git
@@ -53,5 +56,5 @@ cd Dev-BackOffice-Challenge-002
 git checkout entrega-tardia
 mvn clean install
 mvn spring-boot:run
-http://localhost:8080
+
 
