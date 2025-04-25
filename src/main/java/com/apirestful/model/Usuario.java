@@ -1,13 +1,7 @@
 package com.apirestful.model;
 
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Column;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -71,6 +65,14 @@ public class Usuario {
 
     public void setClave(String clave) {
         this.clave = clave;
+    }
+
+    public NivelAcceso getNivelAcceso() {
+        return nivelAcceso;
+    }
+    
+    public void setNivelAcceso(NivelAcceso nivelAcceso) {
+        this.nivelAcceso = nivelAcceso;
     }
 
     public LocalDateTime getFechaUltimoIngreso() {

@@ -1,11 +1,6 @@
 package com.apirestful.model; 
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -31,7 +26,7 @@ public class Categoria {
 
     public Categoria() {}
 
-    // Constructor con parámetrosc
+    // Constructor con parámetros
     public Categoria(String nombre, boolean estado) {
         this.nombre = nombre;
         this.estado = estado;
@@ -39,7 +34,7 @@ public class Categoria {
         this.fechaActualizacion = LocalDateTime.now();
     }
 
-    // Getters y Setters
+    // Getters & Setters
     public Integer getId() {
         return id;
     }
